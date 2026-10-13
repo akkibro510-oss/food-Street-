@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="hi">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>FoodStreet | आपके शहर का स्वाद</title>
+<meta name="description" content="Fulera, Kachroda और Sambhar के आसपास फास्ट फूड रेस्टोरेंट खोजें।">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#1d201c;--muted:#6f746d;--cream:#fffaf1;--orange:#f05b35;--green:#244f3a;--line:#ece6db}*{box-sizing:border-box}body{margin:0;background:var(--cream);color:var(--ink);font-family:'DM Sans',sans-serif}h1,h2,h3,.brand{font-family:Outfit,sans-serif}a{color:inherit;text-decoration:none}.wrap{max-width:1160px;margin:auto;padding:0 22px}.nav{height:78px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line)}.brand{font-size:25px;font-weight:800;letter-spacing:-1px}.brand span{color:var(--orange)}.navright{display:flex;gap:10px;align-items:center}.btn{border:0;border-radius:13px;padding:12px 17px;font-weight:700;cursor:pointer;font:inherit}.primary{background:var(--orange);color:white}.secondary{background:white;border:1px solid var(--line)}.hero{padding:54px 0 38px;display:grid;grid-template-columns:1.15fr .85fr;gap:28px;align-items:center}.eyebrow{color:var(--orange);font-weight:800;text-transform:uppercase;letter-spacing:2px;font-size:12px}.hero h1{font-size:clamp(40px,6vw,68px);line-height:1.02;letter-spacing:-2.5px;margin:12px 0}.hero h1 em{font-style:normal;color:var(--orange)}.hero p{font-size:17px;color:var(--muted);line-height:1.7;max-width:540px}.heroimg{min-height:310px;border-radius:28px;background:linear-gradient(135deg,#40291c33,#171d1533),url('https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=1100&q=85') center/cover;box-shadow:0 20px 45px #6b3d1b20;position:relative}.floating{position:absolute;bottom:18px;left:18px;background:#fffaf1;padding:13px 16px;border-radius:15px;font-weight:700}.searchbox{display:flex;gap:10px;flex-wrap:wrap;background:white;border:1px solid var(--line);border-radius:18px;padding:12px;max-width:760px;margin-top:22px;box-shadow:0 12px 30px #3b29100b}.searchbox input,.searchbox select{border:0;outline:0;padding:10px;min-width:150px;flex:1;background:white;font:inherit}.section{padding:35px 0 60px}.sectionhead{display:flex;align-items:end;justify-content:space-between;gap:15px;margin-bottom:22px}.section h2{font-size:32px;margin:7px 0}.muted{color:var(--muted)}.chips{display:flex;gap:8px;flex-wrap:wrap;margin:18px 0 24px}.chip{border:1px solid var(--line);background:white;padding:9px 14px;border-radius:999px;cursor:pointer}.chip.active{background:var(--green);color:white;border-color:var(--green)}.cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}.card{background:white;border:1px solid var(--line);border-radius:20px;overflow:hidden;transition:.2s}.card:hover{transform:translateY(-3px);box-shadow:0 14px 30px #382b1710}.foodimg{height:190px;background:#f0e8dc center/cover}.cardbody{padding:17px}.card h3{margin:0 0 7px;font-size:21px}.tag{display:inline-block;background:#f4eee5;border-radius:8px;padding:5px 8px;font-size:12px;font-weight:700}.card p{color:var(--muted);font-size:14px;line-height:1.5}.empty{grid-column:1/-1;text-align:center;padding:45px 20px;background:white;border:1px dashed #d8cdbd;border-radius:20px}.cta{background:var(--green);color:white;border-radius:26px;padding:30px;display:flex;justify-content:space-between;align-items:center;gap:18px;margin-bottom:55px}.cta h2{margin:0 0 8px}.cta p{margin:0;color:#d6e4d9}.footer{padding:25px 0;border-top:1px solid var(--line);color:var(--muted);font-size:13px;display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap}.modal{position:fixed;inset:0;background:#101710a6;display:none;align-items:center;justify-content:center;padding:16px;z-index:5}.modal.show{display:flex}.dialog{background:var(--cream);width:min(580px,100%);max-height:92vh;overflow:auto;border-radius:22px;padding:24px}.dialoghead{display:flex;justify-content:space-between;align-items:center}.formgrid{display:grid;grid-template-columns:1fr 1fr;gap:12px}.field{display:flex;flex-direction:column;gap:6px;margin:9px 0}.field.full{grid-column:1/-1}.field label{font-size:13px;font-weight:700}.field input,.field select,.field textarea{padding:12px;border:1px solid var(--line);border-radius:11px;background:white;font:inherit;width:100%}.field textarea{min-height:75px}.note{font-size:12px;color:var(--muted);line-height:1.5}.status{padding:10px 12px;border-radius:10px;background:#fff0dc;margin:10px 0;font-size:13px}.userbar{font-size:12px;color:var(--muted)}@media(max-width:760px){.hero{grid-template-columns:1fr;padding-top:35px}.heroimg{min-height:240px}.cards{grid-template-columns:1fr 1fr}.nav{height:68px}.hero h1{letter-spacing:-1.5px}.cta{align-items:flex-start;flex-direction:column}}@media(max-width:500px){.cards{grid-template-columns:1fr}.formgrid{grid-template-columns:1fr}.field.full{grid-column:auto}.navright .secondary{display:none}.sectionhead{align-items:flex-start;flex-direction:column}}
+</style>
+</head>
+<body>
+<header class="wrap nav"><a class="brand" href="#">food<span>street.</span></a><div class="navright"><span class="userbar" id="userStatus">Guest mode</span><button class="btn secondary" id="loginBtn">Google से लॉगिन</button><button class="btn primary" id="addBtn">+ दुकान जोड़ें</button></div></header>
+<main class="wrap">
+<section class="hero"><div><div class="eyebrow">LOCAL FOOD. BIG FLAVOUR.</div><h1>आपके शहर का<br><em>असली स्वाद.</em></h1><p>अपने आसपास के बेहतरीन फास्ट फूड स्पॉट खोजें — बर्गर, पिज़्ज़ा, चाट और बहुत कुछ। स्थानीय दुकानों को सपोर्ट करें।</p><div class="searchbox"><input id="searchInput" placeholder="रेस्टोरेंट या फूड खोजें…"><select id="locationFilter"><option value="">सभी लोकेशन</option><option>Fulera</option><option>Kachroda</option><option>Sambhar</option></select><button class="btn primary" id="searchBtn">खोजें</button></div></div><div class="heroimg"><div class="floating">🍔 हर बाइट में लोकल स्वाद</div></div></section>
+<section class="section"><div class="sectionhead"><div><div class="eyebrow">DISCOVER YOUR NEXT BITE</div><h2>लोकल फूड स्पॉट्स</h2><div class="muted">सिर्फ सत्यापित और अप्रूव किए गए रेस्टोरेंट</div></div><div class="muted" id="countLabel">लोड हो रहा है…</div></div><div class="chips"><button class="chip active" data-cat="">सभी</button><button class="chip" data-cat="Fast Food">फास्ट फूड</button><button class="chip" data-cat="Pizza">पिज़्ज़ा</button><button class="chip" data-cat="Burger">बर्गर</button><button class="chip" data-cat="Chaat">चाट</button><button class="chip" data-cat="Chinese">चाइनीज़</button></div><div class="cards" id="restaurantGrid"><div class="empty">रेस्टोरेंट लोड हो रहे हैं…</div></div></section>
+<section class="cta"><div><h2>आपकी भी फूड शॉप है?</h2><p>अपनी दुकान लिस्ट करें और आसपास के ग्राहकों तक पहुँचें।</p></div><button class="btn primary" id="ctaAdd">अपनी दुकान जोड़ें →</button></section>
+</main>
+<footer class="wrap footer"><span>© <span id="year"></span> FoodStreet · Local food, local love.</span><span>दुकानें एडमिन की जाँच और मंज़ूरी के बाद ही प्रकाशित होती हैं।</span></footer>
+<div class="modal" id="modal"><div class="dialog"><div class="dialoghead"><h2 id="modalTitle">अपनी दुकान जोड़ें</h2><button class="btn secondary" id="closeModal">✕</button></div><div id="loginNotice" class="status">आगे बढ़ने के लिए Google से लॉगिन करें।</div><form id="restaurantForm"><div class="formgrid">
+<div class="field"><label>दुकान / रेस्टोरेंट का नाम *</label><input name="name" required maxlength="80"></div>
+<div class="field"><label>मालिक का नाम *</label><input name="ownerName" required maxlength="80"></div>
+<div class="field"><label>मोबाइल नंबर *</label><input name="phone" required inputmode="tel" pattern="[0-9+ -]{10,16}"></div>
+<div class="field"><label>लोकेशन *</label><select name="location" required><option value="">चुनें</option><option>Fulera</option><option>Kachroda</option><option>Sambhar</option></select></div>
+<div class="field"><label>फूड कैटेगरी *</label><select name="category" required><option>Fast Food</option><option>Pizza</option><option>Burger</option><option>Chaat</option><option>Chinese</option><option>Other</option></select></div>
+<div class="field"><label>मेन्यू / खास आइटम *</label><input name="menu" required placeholder="जैसे: बर्गर, मोमोज़"></div>
+<div class="field full"><label>दुकान का पूरा पता *</label><textarea name="address" required maxlength="400"></textarea></div>
+<div class="field full"><label>दुकान की फोटो (वैकल्पिक)</label><input name="photo" type="url" placeholder="https://..."><span class="note">फिलहाल फोटो का सार्वजनिक URL दें। अपलोड सुविधा जोड़ने के लिए Firebase Storage सेट करें।</span></div>
+<div class="field full"><label>वेरिफिकेशन डॉक्यूमेंट *</label><select name="documentType" required><option value="">डॉक्यूमेंट चुनें</option><option>Shop / Trade License</option><option>FSSAI Registration / License</option><option>GST Registration</option><option>Other business proof</option></select><span class="note">डॉक्यूमेंट का प्रकार चुनें। एडमिन आपसे प्रमाण की कॉपी अलग से माँग सकता है। संवेदनशील दस्तावेज़ों का सार्वजनिक लिंक न डालें।</span></div>
+<div class="field full"><label>वेरिफिकेशन नोट / प्रमाण विवरण *</label><textarea name="verificationNote" required maxlength="500" placeholder="लाइसेंस/रजिस्ट्रेशन नंबर या सत्यापन के लिए उपयोगी जानकारी"></textarea></div>
+</div><p class="note">सबमिट करने पर आपकी दुकान Pending स्थिति में जाएगी। एडमिन की मंज़ूरी से पहले यह सार्वजनिक नहीं होगी।</p><button class="btn primary" type="submit" style="width:100%">वेरिफिकेशन के लिए सबमिट करें</button><div id="formMessage" class="status" style="display:none"></div></form></div></div>
+<script type="module">
+import { initializeApp } from "https://www.gstatic.com/firebasejs/10.14.1/firebase-app.js";
+import { getAuth, GoogleAuthProvider, signInWithPopup, onAuthStateChanged, signOut } from "https://www.gstatic.com/firebasejs/10.14.1/firebase-auth.js";
+import { getFirestore, collection, addDoc, getDocs, query, where, serverTimestamp } from "https://www.gstatic.com/firebasejs/10.14.1/firebase-firestore.js";
+
+// 1) Firebase Console से अपना config यहाँ भरें.
+const firebaseConfig = {
+  apiKey: "YOUR_FIREBASE_API_KEY",
+  authDomain: "YOUR_PROJECT_ID.firebaseapp.com",
+  projectId: "YOUR_PROJECT_ID",
+  storageBucket: "YOUR_PROJECT_ID.appspot.com",
+  messagingSenderId: "YOUR_MESSAGING_SENDER_ID",
+  appId: "YOUR_FIREBASE_APP_ID"
+};
+const configured = !firebaseConfig.apiKey.startsWith("YOUR_");
+let auth, db, currentUser, restaurants = [], activeCategory = "";
+const $ = id => document.getElementById(id);
+$("year").textContent = new Date().getFullYear();
+if (configured) {
+  const app = initializeApp(firebaseConfig); auth = getAuth(app); db = getFirestore(app);
+  onAuthStateChanged(auth, user => { currentUser = user; $("userStatus").textContent = user ? user.email : "Guest mode"; $("loginBtn").textContent = user ? "लॉगआउट" : "Google से लॉगिन"; $("loginNotice").textContent = user ? `लॉगिन: ${user.email}` : "आगे बढ़ने के लिए Google से लॉगिन करें।"; });
+  loadRestaurants();
+} else {
+  $("restaurantGrid").innerHTML = '<div class="empty"><b>Firebase सेटअप बाकी है</b><br><br>README.md में दिए गए स्टेप्स के अनुसार Firebase config जोड़ें। फिर लाइव रेस्टोरेंट यहाँ दिखेंगे।</div>';
+  $("countLabel").textContent = "सेटअप बाकी";
+}
+async function loadRestaurants() {
+  try { const q = query(collection(db,"restaurants"), where("status","==","approved")); const snap = await getDocs(q); restaurants = snap.docs.map(d=>({id:d.id,...d.data()})); render(); }
+  catch(e) { $("restaurantGrid").innerHTML = `<div class="empty">डेटा लोड नहीं हो पाया। Firebase Firestore Rules और config जाँचें।<br><small>${escapeHtml(e.message)}</small></div>`; }
+}
+function escapeHtml(v=""){return String(v).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));}
+function render(){
+ const term=$("searchInput").value.trim().toLowerCase(), loc=$("locationFilter").value;
+ const list=restaurants.filter(r=>(!loc||r.location===loc)&&(!activeCategory||r.category===activeCategory)&&(!term||[r.name,r.menu,r.address,r.location,r.category].join(" ").toLowerCase().includes(term)));
+ $("countLabel").textContent=`${list.length} रेस्टोरेंट`;
+ $("restaurantGrid").innerHTML=list.length?list.map(r=>`<article class="card"><div class="foodimg" style="background-image:url('${safeUrl(r.photo)||'https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=900&q=80'}')"></div><div class="cardbody"><span class="tag">${escapeHtml(r.category||"Fast Food")}</span><h3>${escapeHtml(r.name)}</h3><div class="muted">📍 ${escapeHtml(r.location||"")} · ${escapeHtml(r.address||"")}</div><p>🍽️ ${escapeHtml(r.menu||"मेन्यू की जानकारी उपलब्ध नहीं")}</p><p>📞 ${escapeHtml(r.phone||"")}</p></div></article>`).join(""):'<div class="empty"><h3>अभी कोई रेस्टोरेंट नहीं मिला</h3><p>इस फ़िल्टर के लिए अभी कोई अप्रूव किया गया रेस्टोरेंट नहीं है।</p></div>';
+}
+function safeUrl(u){try{const x=new URL(u);return ["https:","http:"].includes(x.protocol)?x.href:""}catch{return ""}}
+$("searchBtn").onclick=render; $("searchInput").addEventListener("input",render); $("locationFilter").onchange=render;
+document.querySelectorAll("[data-cat]").forEach(b=>b.onclick=()=>{document.querySelectorAll("[data-cat]").forEach(x=>x.classList.remove("active"));b.classList.add("active");activeCategory=b.dataset.cat;render();});
+function openModal(){$("modal").classList.add("show");$("formMessage").style.display="none";}
+$("addBtn").onclick=$("ctaAdd").onclick=()=>{openModal();};
+$("closeModal").onclick=()=>$("modal").classList.remove("show");
+$("modal").onclick=e=>{if(e.target===$("modal"))$("modal").classList.remove("show");};
+async function login(){if(!auth){alert("पहले README में बताए अनुसार Firebase config सेट करें।");return null;}try{const result=await signInWithPopup(auth,new GoogleAuthProvider());return result.user;}catch(e){alert("Google लॉगिन नहीं हुआ: "+e.message);return null;}}
+$("loginBtn").onclick=async()=>{if(!auth){alert("पहले Firebase config सेट करें।");return;}if(currentUser){await signOut(auth);}else await login();};
+$("restaurantForm").onsubmit=async e=>{
+ e.preventDefault(); if(!auth){alert("पहले Firebase config सेट करें।");return;} let user=currentUser||await login();if(!user)return;
+ const f=new FormData(e.target), data=Object.fromEntries(f.entries());
+ const message=$("formMessage"); message.style.display="block"; message.textContent="सबमिट हो रहा है…";
+ try{
+ await addDoc(collection(db,"restaurants"),{name:data.name.trim(),ownerName:data.ownerName.trim(),phone:data.phone.trim(),location:data.location,category:data.category,menu:data.menu.trim(),address:data.address.trim(),photo:safeUrl(data.photo),documentType:data.documentType,verificationNote:data.verificationNote.trim(),ownerUid:user.uid,ownerEmail:user.email,status:"pending",createdAt:serverTimestamp(),updatedAt:serverTimestamp()});
+ message.textContent="आपकी दुकान का आवेदन जमा हो गया है। एडमिन जाँच के बाद निर्णय लेगा।";e.target.reset();
+ }catch(err){message.textContent="सबमिट नहीं हुआ: "+err.message;}
+};
+</script>
+</body></html>

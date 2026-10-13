@@ -1,0 +1,31 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    // Replace PASTE_YOUR_GOOGLE_ACCOUNT_UID_HERE with your Google/Firebase Auth UID.
+    function isAdmin() {
+      return request.auth != null &&
+        request.auth.uid == "PASTE_YOUR_GOOGLE_ACCOUNT_UID_HERE";
+    }
+    function signedIn() { return request.auth != null; }
+
+    match /restaurants/{restaurantId} {
+      // Public visitors can only read approved listings.
+      allow read: if resource.data.status == "approved" || isAdmin()
+                  || (signedIn() && resource.data.ownerUid == request.auth.uid);
+
+      // Logged-in restaurant owners can submit only their own pending applications.
+      allow create: if signedIn()
+        && request.resource.data.ownerUid == request.auth.uid
+        && request.resource.data.status == "pending"
+        && request.resource.data.name is string
+        && request.resource.data.name.size() > 0
+        && request.resource.data.ownerName is string
+        && request.resource.data.phone is string
+        && request.resource.data.address is string
+        && request.resource.data.location in ["Fulera", "Kachroda", "Sambhar"];
+
+      // Owners cannot approve themselves or change ownership; only admin can update/delete.
+      allow update, delete: if isAdmin();
+    }
+  }
+}
